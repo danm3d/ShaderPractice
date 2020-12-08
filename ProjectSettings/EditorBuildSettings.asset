@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Stencil Buffer Test.unity
+    guid: 41ff37ebba5f6d144b2811b860520a55
   m_configObjects: {}
