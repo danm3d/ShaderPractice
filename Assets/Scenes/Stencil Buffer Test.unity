@@ -218,7 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.25
-  rotationEuler: {x: 0, y: 0, z: 0}
+  randomRange: 10
+  rotationEuler: {x: 4.53, y: 3.56, z: -6.55}
 --- !u!1 &651984219
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +770,7 @@ GameObject:
   - component: {fileID: 543450651871749471}
   - component: {fileID: 3469287838003636986}
   - component: {fileID: 1711813855285009968}
+  - component: {fileID: 919132147669106662}
   m_Layer: 0
   m_Name: Suzologram
   m_TagString: Untagged
@@ -776,6 +778,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132147669106662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147669106661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c592b8a51c744b09a1f91a6ec0dfb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.25
+  randomRange: 10
+  rotationEuler: {x: 0, y: 0, z: 0}
 --- !u!1 &919132147761937422
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109bf962de76645538e4a0184654d2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenCamera: {fileID: 0}
 --- !u!23 &8410194007885674754
 MeshRenderer:
   m_ObjectHideFlags: 0
