@@ -5,9 +5,6 @@
 		_RimColor ("Rim Color", Color) = (0, 0.5, 0.5, 0)
 		_RimPower ("Rim Power", Range(0.5, 8.0)) = 3.0
 		_RimIntensity ("Rim Intensity", Range(0, 20)) = 10.0
-		// Favor 1 color over the other
-		_ColorBias ("Bias", Range(0.0, 1.0)) = 0.5
-		// TODO: Maybe rename because multiplier doesn't really make sense in this instance
 		_FractionMultiplier ("Fraction Multiplier", Range(0, 10)) = 1.0
 		_Divisor ("Divisor", Range(0, 10)) = 0.5
 	}
@@ -30,7 +27,6 @@
 		float4 _RimColor;
 		float _RimPower;
 		half _RimIntensity;
-		half _ColorBias;
 		half _FractionMultiplier;
 		half _Divisor;
 

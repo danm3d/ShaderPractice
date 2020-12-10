@@ -1,4 +1,4 @@
-Shader "ShaderPractice/Stencil Buffer - Wall"
+Shader "ShaderPractice/Stencil Buffer - Hole"
 {
     Properties
     {
@@ -9,14 +9,23 @@ Shader "ShaderPractice/Stencil Buffer - Wall"
     {
         Tags
         {
-            "Queue" = "Geometry"
+            "Queue" = "Geometry-1"
         }
-
+        
+        // Don't show any color
+        ColorMask 0
+        
+        // Don't write it to the ZBuffer
+        ZWrite off
+        
         Stencil
         {
             Ref 1
-            Comp notequal
-            Pass keep
+            // Comp stands for comparison
+            Comp always
+            
+            // Now we tell it what we want to do with pixel to draw
+            Pass replace
         }
 
         CGPROGRAM
@@ -36,5 +45,4 @@ Shader "ShaderPractice/Stencil Buffer - Wall"
         }
         ENDCG
     }
-    FallBack "Diffuse"
 }

@@ -1,4 +1,4 @@
-Shader "ShaderPractice/Stencil Buffer - Hole"
+Shader "ShaderPractice/Stencil Buffer - Wall"
 {
     Properties
     {
@@ -9,25 +9,16 @@ Shader "ShaderPractice/Stencil Buffer - Hole"
     {
         Tags
         {
-            "Queue" = "Geometry-1"
+            "Queue" = "Geometry"
         }
-        
-        // Don't show any color
-        ColorMask 0
-        
-        // Don't write it to the ZBuffer
-        ZWrite off
-        
+
         Stencil
         {
             Ref 1
-            // Comp stands for comparison
-            Comp always
-            
-            // Now we tell it what we want to do with pixel to draw
-            Pass replace
+            Comp notequal
+            Pass keep
         }
-
+        // TODO: Need a custom shadow caster pass to let it show shadows behind
         CGPROGRAM
         #pragma surface surf Lambert
 
