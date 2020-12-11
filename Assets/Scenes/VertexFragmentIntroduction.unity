@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 405056922}
   - component: {fileID: 405056921}
   - component: {fileID: 405056920}
-  - component: {fileID: 405056919}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -142,20 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &405056919
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405056918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &405056920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,7 +189,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405056918}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 9127120572191758296, guid: 029ea4ffb8c24458c8af188987507943, type: 3}
 --- !u!4 &405056922
 Transform:
   m_ObjectHideFlags: 0
@@ -306,15 +291,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.263
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalRotation.x
@@ -322,11 +307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f378f2779d11544adc2111cf618c75, type: 3}
       propertyPath: m_LocalRotation.w

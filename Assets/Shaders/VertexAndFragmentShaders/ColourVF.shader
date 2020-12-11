@@ -37,7 +37,8 @@
                 // convert vertex data to "fragments" for frag to process
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.color.r = abs(v.vertex.x);
+                o.color.r = abs(sin(v.vertex.x));
+				o.vertex.y -= o.color.r;
                 return o;
             }
 
