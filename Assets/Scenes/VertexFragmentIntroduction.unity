@@ -312,11 +312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.46
+      value: 0.977
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.31
+      value: -5.711
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -353,7 +353,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 650adb9de95888845a295840d1f841b3, type: 2}
+      objectReference: {fileID: 2100000, guid: db6e856f9f599fc419cd072d76b56b24, type: 2}
     - target: {fileID: 919132149155446097, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_Name
       value: Suzanne (5)
@@ -833,11 +833,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.181
+      value: -0.889
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.46
+      value: -0.239
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b83cac3c8e21ef44a96a87f4a51358b8, type: 3}
       propertyPath: m_LocalPosition.z

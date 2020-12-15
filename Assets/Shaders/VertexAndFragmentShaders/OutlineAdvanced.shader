@@ -3,8 +3,8 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _OutlineColor ("Outline Color", Color) = (0,0,0,1)
-        _OutlineWidth ("Outline Width", Range(0.01, 0.1)) = 0.01
+        _OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)
+        _OutlineWidth ("Outline Width", Range(0.01, 1.0)) = 0.01
     }
     SubShader
     {
@@ -44,23 +44,24 @@
 
             struct v2f
             {
-                float4 pos :SV_POSITION;
+                float4 pos : SV_POSITION;
                 fixed4 color : COLOR;
             };
 
-            float4 _Outline;
+            float _OutlineWidth;
             float4 _OutlineColor;
 
             v2f vert(appdata v)
             {
                 v2f o;
-                
                 o.pos = UnityObjectToClipPos(v.vertex);
-                // The world space normals to view space
+
+                // UNITY_MATRIX_IT_MV is the Inverse transpose of model * view matrix.  This rotates the normals from object space to observer space.
                 float3 norm = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));
                 float2 offset = TransformViewToProjection(norm.xy);
 
-                o.pos.xy += offset * o.pos.z * _Outline;
+                // o.pos.z is the clip/view z to calculate outline thickness relative to the view
+                o.pos.xy += offset * o.pos.z * _OutlineWidth;
                 o.color = _OutlineColor;
                 return o;
             }
@@ -72,5 +73,5 @@
             ENDCG
         }
     }
-    FallBack "Diffuse"
+    //FallBack "Diffuse"
 }
