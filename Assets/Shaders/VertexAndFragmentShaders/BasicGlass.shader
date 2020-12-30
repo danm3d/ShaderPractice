@@ -66,7 +66,7 @@
 				half2 bump = UnpackNormal(tex2D( _BumpMap, i.uvbump )).rg;
 				float2 offset = bump * _ScaleUV * _GrabTexture_TexelSize.xy;
 
-				i.uvgrab.xy = offset * i.uvgrab.z * i.uvgrab.xy;
+				i.uvgrab.xy = offset * i.uvgrab.z + i.uvgrab.xy;
 
 				fixed4 col = tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
 				fixed4 tint = tex2D(_MainTex, i.uv);
